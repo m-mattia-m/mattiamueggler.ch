@@ -6,6 +6,8 @@ export default defineNuxtConfig({
         'nuxt-svgo',
     ],
     app: {
+        baseURL: '/mattiamueggler.ch/',
+        buildAssetsDir: 'assets',
         head: {
             title: "mattiamueggler.ch",
             htmlAttrs: {
@@ -21,3 +23,4 @@ export default defineNuxtConfig({
         domain: 'mattiamueggler.ch',
     },
 })
+
