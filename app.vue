@@ -3,6 +3,13 @@
     <span class="w-8 h-8 sm:w-16 sm:h-16"></span>
     <div
         class="bg-[#134074] text-white p-4 sm:p-8 border rounded-lg transform transition ease-in duration-300 hover:scale-125">
+      <a href="https://cv.mattiamueggler.ch" target="_blank" @click="useTrackEvent('cv')">
+        <CV :fontControlled="false" :filled="true" class="h-14 w-14 sm:h-12 sm:w-12 text-white"/>
+      </a>
+    </div>
+    <span class="w-8 h-8 sm:w-16 sm:h-16"></span>
+    <div
+        class="bg-[#134074] text-white p-4 sm:p-8 border rounded-lg transform transition ease-in duration-300 hover:scale-125">
       <a href="https://github.com/m-mattia-m" target="_blank" @click="useTrackEvent('github')">
         <Github :fontControlled="false" :filled="true" class="h-14 w-14 sm:h-12 sm:w-12"/>
       </a>
@@ -42,6 +49,7 @@
 </template>
 
 <script lang="ts" setup>
+import CV from "~/public/icons/cv.svg";
 import Github from "~/public/icons/github.svg";
 import Linkedin from "~/public/icons/linkedin.svg";
 import Squares from "~/public/icons/squares.svg";
