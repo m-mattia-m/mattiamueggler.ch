@@ -17,9 +17,9 @@ export default defineNuxtConfig({
             viewport: 'width=device-width, initial-scale=1',
         }
     },
-    routeRules: {
-        "/**": { ssr: true },
-    },
+    // routeRules: {
+    //     "/**": { ssr: true },
+    // },
     devtools: {enabled: true},
     css: ['~/assets/style.scss'],
     plausible: {
