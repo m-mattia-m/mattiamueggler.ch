@@ -18,8 +18,8 @@ export default defineNuxtConfig({
             meta: [
                 { name : "title", content: "Mattia Müggler"},
                 { name : "ogTitle", content: "Mattia Müggler"},
-                { name : "description", content: "Hi, my name is Mattia Müggler. I'm 20 years old and work as a software engineer. This page will show you more information about me."},
-                { name : "ogDescription", content: "Hi, my name is Mattia Müggler. I'm 20 years old and work as a software engineer. This page will show you more information about me."},
+                { name : "description", content: "Hi, my name is Mattia Müggler. I'm twenty-years-old and work as a software engineer. This page will show you more information about me."},
+                { name : "ogDescription", content: "Hi, my name is Mattia Müggler. I'm twenty-years-old and work as a software engineer. This page will show you more information about me."},
                 { name : "theme-color", content: "#90E0EF"},
             ]
         }
