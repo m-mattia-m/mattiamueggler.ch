@@ -53,7 +53,7 @@
         <div class="flex justify-center items-center">
           <div
               class="bg-[#134074] text-white p-8 md:p-8 border rounded-lg transform transition ease-in duration-300 hover:scale-125">
-            <NuxtLink to="/assets" @click="useTrackEvent('info')">
+            <NuxtLink to="/information" @click="useTrackEvent('info')">
               <Info :fontControlled="false" :filled="true" class="h-14 w-14"/>
             </NuxtLink>
           </div>

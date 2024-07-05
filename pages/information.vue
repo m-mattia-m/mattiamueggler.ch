@@ -13,6 +13,7 @@
   </ul>
 
   <h1 class="text-2xl pb-2 pt-4">How to use RSA keys - encrypt message</h1>
+  <p>Notice that the size is limited to 501 Bytes.</p>
   <ul class="list-decimal list-outside pl-5">
     <li class="py-[1px]">
       Safe your message in a file.
