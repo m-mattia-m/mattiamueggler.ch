@@ -21,6 +21,8 @@
   <ul class="list-disc list-inside">
     <li><NuxtLink external to="/keys/mattia-at-mattiamueggler-ch_public.key" class="text-blue-800">mattia-at-mattiamueggler-ch_public.key</NuxtLink></li>
     <li><NuxtLink external to="/keys/mattia-at-mattiamueggler-ch_public.txt" class="text-blue-800">mattia-at-mattiamueggler-ch_public.txt</NuxtLink></li>
+    <li><NuxtLink external to="https://keys.openpgp.org/search?q=mattia%40mattiamueggler.ch" class="text-blue-800">Search: https://keys.openpgp.org</NuxtLink></li>
+    <li><NuxtLink external to="https://keys.openpgp.org/vks/v1/by-fingerprint/B0BED2DE24594C8A822C419990D362CAE17B71DF" class="text-blue-800">Fingerprint (keys.openpgp.org): B0BED2DE24594C8A822C419990D362CAE17B71DF</NuxtLink></li>
   </ul>
 
   <h1 class="text-3xl pt-10 pb-2">Images</h1>
