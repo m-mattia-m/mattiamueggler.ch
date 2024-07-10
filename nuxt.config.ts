@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+    compatibilityDate: '2024-07-10',
     modules: [
         '@nuxtjs/tailwindcss',
         '@nuxtjs/plausible',
@@ -7,7 +8,8 @@ export default defineNuxtConfig({
     ],
     app: {
         // baseURL: '/mattiamueggler.ch/',
-        buildAssetsDir: 'assets',
+        // TODO: triggers the same bug as here: https://github.com/nuxt/nuxt/issues/20446#issuecomment-2205452080
+        // buildAssetsDir: 'assets',
         head: {
             title: "mattiamueggler.ch",
             htmlAttrs: {
