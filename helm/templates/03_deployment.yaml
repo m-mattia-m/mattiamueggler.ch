@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Values.deployment.name }}
+  namespace: {{ .Values.namespace.name }}
+spec:
+  replicas: {{ .Values.deployment.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ .Values.deployment.name }}
+  template:
+    metadata:
+      labels:
+        app: {{ .Values.deployment.name }}
+    spec:
+      containers:
+        - name: {{ .Values.deployment.name }}
+          image: "{{ .Values.deployment.image.repository}}:{{ .Values.deployment.image.tag }}"
+          imagePullPolicy: {{ .Values.deployment.image.pullPolicy }}
+          env:
+            - name: NUXT_DRIVE_UPLOAD_URL
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Values.secret.name }}
+                  key: NUXT_DRIVE_UPLOAD_URL
+            - name: NUXT_DRIVE_DOWNLOAD_URL
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Values.secret.name }}
+                  key: NUXT_DRIVE_DOWNLOAD_URL
+            - name: NUXT_DRIVE_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: {{ .Values.secret.name }}
+                  key: NUXT_DRIVE_PASSWORD
+          resources:
+            requests:
+              memory: {{ .Values.deployment.resources.requests.memory }}
+              cpu: {{ .Values.deployment.resources.requests.cpu }}
+            limits:
+              memory: {{ .Values.deployment.resources.limits.memory }}
+              cpu: {{ .Values.deployment.resources.limits.cpu }}
