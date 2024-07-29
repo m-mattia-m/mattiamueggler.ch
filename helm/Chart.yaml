@@ -1,0 +1,4 @@
+apiVersion: v1
+description: A Helm chart to deploy this nuxt site on kubernetes for Kubernetes.
+name: mattiamueggler-ch
+version: 1.0.0

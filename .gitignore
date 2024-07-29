@@ -25,3 +25,6 @@ logs
 
 # Nuxt
 .nuxt
+
+# Deployment
+helm/values.yaml
