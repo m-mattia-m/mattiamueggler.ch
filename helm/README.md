@@ -1,11 +1,14 @@
 # Deployment
 
+
 # Apply
 
 1. Setup `helm install mattiamueggler-ch . --create-namespace` or `helm install mattiamueggler-ch .`
 2. new Rollout `helm upgrade mattiamueggler-ch . --values ./values.yaml`
 
 ## values.yaml
+
+You must create the `values.yaml` file and past this example config in this file.
 
 ```yaml
 namespace:
