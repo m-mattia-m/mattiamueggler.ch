@@ -40,5 +40,11 @@ export default defineNuxtConfig({
         driveDownloadUrl: '',
         drivePassword: ''
     },
+    vite: {
+        esbuild: {
+            drop: ['debugger'],
+            pure: ['console.log', 'console.error', 'console.warn', 'console.debug', 'console.trace'],
+        },
+    },
 })
 
