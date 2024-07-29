@@ -13,64 +13,64 @@
         <div class="flex justify-center items-center">
           <div
               class="bg-[#134074] text-white w-32 h-32 flex items-center justify-center border rounded-lg transform transition ease-in duration-300 hover:scale-125">
-            <NuxtLink :external="true" to="https://github.com/m-mattia-m" target="_blank" @click="useTrackEvent('github')">
-              <Github :fontControlled="false" :filled="true" class="h-14 w-14"/>
+            <NuxtLink :external="true" to="https://github.com/m-mattia-m" target="_blank" @click="useTrackEvent('github')" aria-label="Github">
+              <Github :fontControlled="false" :filled="true" class="h-14 w-14"  alt="Github"/>
             </NuxtLink>
           </div>
         </div>
         <div class="flex justify-center items-center">
           <div
               class="bg-[#134074] text-white w-32 h-32 flex items-center justify-center border rounded-lg transform transition ease-in duration-300 hover:scale-125">
-            <NuxtLink :external="true" to="https://www.linkedin.com/in/mattia-mueggler" target="_blank" @click="useTrackEvent('linkedin')">
-              <Linkedin :fontControlled="false" :filled="true" class="h-14 w-14"/>
+            <NuxtLink :external="true" to="https://www.linkedin.com/in/mattia-mueggler" target="_blank" @click="useTrackEvent('linkedin')" aria-label="LinkedIn">
+              <Linkedin :fontControlled="false" :filled="true" class="h-14 w-14"  alt="LinkedIn"/>
             </NuxtLink>
           </div>
         </div>
         <div class="flex justify-center items-center">
           <div
               class="bg-[#134074] text-white w-32 h-32 flex items-center justify-center border rounded-lg transform transition ease-in duration-300 hover:scale-125">
-            <NuxtLink :external="true" to="https://bento.me/mattiamueggler" target="_blank" @click="useTrackEvent('bento')">
-              <Bento :fontControlled="false" :filled="true" class="h-14 w-14"/>
+            <NuxtLink :external="true" to="https://bento.me/mattiamueggler" target="_blank" @click="useTrackEvent('bento')" aria-label="Bento">
+              <Bento :fontControlled="false" :filled="true" class="h-14 w-14"  alt="Bento"/>
             </NuxtLink>
           </div>
         </div>
         <div class="flex justify-center items-center">
           <div
               class="bg-[#134074] text-white w-32 h-32 flex items-center justify-center border rounded-lg transform transition ease-in duration-300 hover:scale-125">
-            <NuxtLink :external="true" to="https://github.com/m-mattia-m/notify/" target="_blank" @click="useTrackEvent('notify')">
-              <Bars :fontControlled="false" :filled="true" class="h-14 w-14"/>
+            <NuxtLink :external="true" to="https://github.com/m-mattia-m/notify/" target="_blank" @click="useTrackEvent('notify')" aria-label="Notify">
+              <Bars :fontControlled="false" :filled="true" class="h-14 w-14"  alt="Notify"/>
             </NuxtLink>
           </div>
         </div>
         <div class="flex justify-center items-center">
           <div
               class="bg-[#134074] text-white w-32 h-32 flex items-center justify-center border rounded-lg transform transition ease-in duration-300 hover:scale-125">
-            <NuxtLink :external="true" to="https://formtion.app" target="_blank" @click="useTrackEvent('formtion')">
-              <Formtion :fontControlled="false" :filled="true" class="h-14 w-14"/>
+            <NuxtLink :external="true" to="https://formtion.app" target="_blank" @click="useTrackEvent('formtion')"  aria-label="Formtion">
+              <Formtion :fontControlled="false" :filled="true" class="h-14 w-14"  alt="Formtion"/>
             </NuxtLink>
           </div>
         </div>
         <div class="flex justify-center items-center">
           <div
               class="bg-[#134074] text-white w-32 h-32 flex items-center justify-center border rounded-lg transform transition ease-in duration-300 hover:scale-125">
-            <NuxtLink external target="_blank" to="https://mattiamueggler.notion.site" @click="useTrackEvent('notion')">
-              <Notion :fontControlled="false" :filled="true" class="h-14 w-14"/>
+            <NuxtLink external target="_blank" to="https://mattiamueggler.notion.site" @click="useTrackEvent('notion')" aria-label="Notion">
+              <Notion :fontControlled="false" :filled="true" class="h-14 w-14"  alt="Notion"/>
             </NuxtLink>
           </div>
         </div>
         <div class="flex justify-center items-center">
           <div
               class="bg-[#134074] text-white w-32 h-32 flex items-center justify-center border rounded-lg transform transition ease-in duration-300 hover:scale-125">
-            <NuxtLink to="/security" @click="useTrackEvent('security')">
-              <Key :fontControlled="false" :filled="true" class="h-14 w-14"/>
+            <NuxtLink to="/security" @click="useTrackEvent('security')" aria-label="Security">
+              <Key :fontControlled="false" :filled="true" class="h-14 w-14"  alt="Key"/>
             </NuxtLink>
           </div>
         </div>
         <div class="flex justify-center items-center">
           <div
               class="bg-[#134074] text-white w-32 h-32 flex items-center justify-center border rounded-lg transform transition ease-in duration-300 hover:scale-125">
-            <NuxtLink to="/drive" @click="useTrackEvent('drive')">
-              <Drive :fontControlled="false" :filled="true" class="h-14 w-14"/>
+            <NuxtLink to="/drive" @click="useTrackEvent('drive')" aria-label="Drive">
+              <Drive :fontControlled="false" :filled="true" class="h-14 w-14"  alt="Drive"/>
             </NuxtLink>
           </div>
         </div>
