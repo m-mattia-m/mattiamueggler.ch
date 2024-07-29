@@ -4,7 +4,7 @@
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
         <div class="flex justify-center items-center">
           <div
-              class="bg-[#134074] text-white p-8 md:p-8 border rounded-lg transform transition ease-in duration-300 hover:scale-125">
+              class="bg-[#134074] text-white w-32 h-32 flex items-center justify-center border rounded-lg transform transition ease-in duration-300 hover:scale-125">
             <NuxtLink :external="true" to="https://cv.mattiamueggler.ch" target="_blank" @click="useTrackEvent('cv')">
               <CV :fontControlled="false" :filled="true" class="h-14 w-14 text-white"/>
             </NuxtLink>
@@ -12,7 +12,7 @@
         </div>
         <div class="flex justify-center items-center">
           <div
-              class="bg-[#134074] text-white p-8 md:p-8 border rounded-lg transform transition ease-in duration-300 hover:scale-125">
+              class="bg-[#134074] text-white w-32 h-32 flex items-center justify-center border rounded-lg transform transition ease-in duration-300 hover:scale-125">
             <NuxtLink :external="true" to="https://github.com/m-mattia-m" target="_blank" @click="useTrackEvent('github')">
               <Github :fontControlled="false" :filled="true" class="h-14 w-14"/>
             </NuxtLink>
@@ -20,7 +20,7 @@
         </div>
         <div class="flex justify-center items-center">
           <div
-              class="bg-[#134074] text-white p-8 md:p-8 border rounded-lg transform transition ease-in duration-300 hover:scale-125">
+              class="bg-[#134074] text-white w-32 h-32 flex items-center justify-center border rounded-lg transform transition ease-in duration-300 hover:scale-125">
             <NuxtLink :external="true" to="https://www.linkedin.com/in/mattia-mueggler" target="_blank" @click="useTrackEvent('linkedin')">
               <Linkedin :fontControlled="false" :filled="true" class="h-14 w-14"/>
             </NuxtLink>
@@ -28,7 +28,7 @@
         </div>
         <div class="flex justify-center items-center">
           <div
-              class="bg-[#134074] text-white p-8 md:p-8 border rounded-lg transform transition ease-in duration-300 hover:scale-125">
+              class="bg-[#134074] text-white w-32 h-32 flex items-center justify-center border rounded-lg transform transition ease-in duration-300 hover:scale-125">
             <NuxtLink :external="true" to="https://bento.me/mattiamueggler" target="_blank" @click="useTrackEvent('bento')">
               <Bento :fontControlled="false" :filled="true" class="h-14 w-14"/>
             </NuxtLink>
@@ -36,7 +36,7 @@
         </div>
         <div class="flex justify-center items-center">
           <div
-              class="bg-[#134074] text-white p-8 md:p-8 border rounded-lg transform transition ease-in duration-300 hover:scale-125">
+              class="bg-[#134074] text-white w-32 h-32 flex items-center justify-center border rounded-lg transform transition ease-in duration-300 hover:scale-125">
             <NuxtLink :external="true" to="https://github.com/m-mattia-m/notify/" target="_blank" @click="useTrackEvent('notify')">
               <Bars :fontControlled="false" :filled="true" class="h-14 w-14"/>
             </NuxtLink>
@@ -44,7 +44,7 @@
         </div>
         <div class="flex justify-center items-center">
           <div
-              class="bg-[#134074] text-white p-8 md:p-8 border rounded-lg transform transition ease-in duration-300 hover:scale-125">
+              class="bg-[#134074] text-white w-32 h-32 flex items-center justify-center border rounded-lg transform transition ease-in duration-300 hover:scale-125">
             <NuxtLink :external="true" to="https://formtion.app" target="_blank" @click="useTrackEvent('formtion')">
               <Formtion :fontControlled="false" :filled="true" class="h-14 w-14"/>
             </NuxtLink>
@@ -52,9 +52,25 @@
         </div>
         <div class="flex justify-center items-center">
           <div
-              class="bg-[#134074] text-white p-8 md:p-8 border rounded-lg transform transition ease-in duration-300 hover:scale-125">
-            <NuxtLink to="/information" @click="useTrackEvent('info')">
-              <Info :fontControlled="false" :filled="true" class="h-14 w-14"/>
+              class="bg-[#134074] text-white w-32 h-32 flex items-center justify-center border rounded-lg transform transition ease-in duration-300 hover:scale-125">
+            <NuxtLink external target="_blank" to="https://mattiamueggler.notion.site" @click="useTrackEvent('notion')">
+              <Notion :fontControlled="false" :filled="true" class="h-14 w-14"/>
+            </NuxtLink>
+          </div>
+        </div>
+        <div class="flex justify-center items-center">
+          <div
+              class="bg-[#134074] text-white w-32 h-32 flex items-center justify-center border rounded-lg transform transition ease-in duration-300 hover:scale-125">
+            <NuxtLink to="/security" @click="useTrackEvent('security')">
+              <Key :fontControlled="false" :filled="true" class="h-14 w-14"/>
+            </NuxtLink>
+          </div>
+        </div>
+        <div class="flex justify-center items-center">
+          <div
+              class="bg-[#134074] text-white w-32 h-32 flex items-center justify-center border rounded-lg transform transition ease-in duration-300 hover:scale-125">
+            <NuxtLink to="/drive" @click="useTrackEvent('drive')">
+              <Drive :fontControlled="false" :filled="true" class="h-14 w-14"/>
             </NuxtLink>
           </div>
         </div>
@@ -72,5 +88,7 @@ import Linkedin from "~/public/icons/linkedin.svg";
 import Bento from "~/public/icons/bento.svg";
 import Bars from "~/public/icons/bars.svg";
 import Formtion from "~/public/icons/formtion.svg";
-import Info from "~/public/icons/info.svg";
+import Key from "~/public/icons/key.svg";
+import Drive from "~/public/icons/drive.svg";
+import Notion from "~/public/icons/notion.svg";
 </script>

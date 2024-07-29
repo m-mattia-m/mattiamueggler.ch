@@ -30,9 +30,15 @@ export default defineNuxtConfig({
     //     "/**": { ssr: true },
     // },
     devtools: {enabled: true},
+    devServer: { port: 8082},
     css: ['~/assets/style.scss'],
     plausible: {
         domain: 'mattiamueggler.ch',
+    },
+    runtimeConfig: {
+        driveUploadUrl: '',
+        driveDownloadUrl: '',
+        drivePassword: ''
     },
 })
 
