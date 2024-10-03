@@ -3,6 +3,7 @@ import {ArrowRightIcon, EyeIcon, EyeSlashIcon} from "@heroicons/vue/24/outline";
 import getTailwindColor from "~/utils/get-tailwind-color";
 import {AppAlert} from "#components";
 
+const route = useRoute()
 const showContent = ref(false)
 const uploadDriveUrl = ref("")
 const downloadDriveUrl = ref("")
@@ -18,6 +19,12 @@ const loadingAnimationColor = ref(colorDark)
 const alerts = ref([] as Alert[])
 const ifPasswordIsEmpty = computed((): boolean => {
   return password.value === ""
+})
+
+onMounted(() => {
+
+  if (route.query["q"] !== null) password.value = route.query["p"] as string
+  if (password.value?.trim() !== "" && password.value?.trim() !== undefined) submitPassword()
 })
 
 function setLoadingAnimationColor() {
