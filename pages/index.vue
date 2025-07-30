@@ -37,6 +37,14 @@
         <div class="flex justify-center items-center">
           <div
               class="bg-[#134074] text-white w-32 h-32 flex items-center justify-center border rounded-lg transform transition ease-in duration-300 hover:scale-125">
+            <NuxtLink :external="true" to="https://blog.mattiamueggler.ch" target="_blank" @click="useTrackEvent('blog')" aria-label="Blog">
+              <Blog :fontControlled="false" :filled="true" class="h-14 w-14"  alt="Blog"/>
+            </NuxtLink>
+          </div>
+        </div>
+        <div class="flex justify-center items-center">
+          <div
+              class="bg-[#134074] text-white w-32 h-32 flex items-center justify-center border rounded-lg transform transition ease-in duration-300 hover:scale-125">
             <NuxtLink :external="true" to="https://github.com/m-mattia-m/notify/" target="_blank" @click="useTrackEvent('notify')" aria-label="Notify">
               <Bars :fontControlled="false" :filled="true" class="h-14 w-14"  alt="Notify"/>
             </NuxtLink>
@@ -86,6 +94,7 @@ import CV from "~/public/icons/cv.svg";
 import Github from "~/public/icons/github.svg";
 import Linkedin from "~/public/icons/linkedin.svg";
 import Bento from "~/public/icons/bento.svg";
+import Blog from "~/public/icons/blog.svg";
 import Bars from "~/public/icons/bars.svg";
 import Formtion from "~/public/icons/formtion.svg";
 import Key from "~/public/icons/key.svg";
