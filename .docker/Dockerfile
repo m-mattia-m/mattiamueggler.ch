@@ -1,20 +1,17 @@
+# -------------------- BUILD STAGE --------------------
 FROM node:20-bullseye as builder
-
 WORKDIR /app
 
-COPY package.json ./
-COPY package-lock.json ./
-
-RUN npm install
-
-#RUN npm install --save nuxt
-
-RUN npm install nuxt
-
+COPY package*.json ./
+RUN npm ci
 COPY . .
 
-RUN npm run build
+# Generate static output
+RUN npm run generate
 
-EXPOSE 3000
+# -------------------- RUNTIME STAGE --------------------
+FROM nginx:alpine
+COPY --from=builder /app/.output/public /usr/share/nginx/html
 
-CMD node ./.output/server/index.mjs
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
