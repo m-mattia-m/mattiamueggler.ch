@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
-    "@nuxtjs/plausible": "^0.2.3",
+    "@nuxtjs/plausible": "^1.2.0",
     "@nuxtjs/tailwindcss": "^6.9.4",
     "nuxt": "^3.12.3",
     "nuxt-svgo": "^3.6.0",

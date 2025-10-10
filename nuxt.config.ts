@@ -34,6 +34,9 @@ export default defineNuxtConfig({
     css: ['~/assets/style.scss'],
     plausible: {
         domain: 'mattiamueggler.ch',
+        apiHost: "https://plausible.services.mattiamueggler.ch:9443",
+        proxy: false,
+
     },
     runtimeConfig: {
         driveUploadUrl: '',
