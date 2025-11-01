@@ -3,8 +3,7 @@ export default defineNuxtConfig({
     compatibilityDate: '2024-07-10',
     modules: [
         '@nuxtjs/tailwindcss',
-        '@nuxtjs/plausible',
-        'nuxt-svgo',
+        '@nuxtjs/plausible'
     ],
     app: {
         // baseURL: '/mattiamueggler.ch/',
@@ -26,9 +25,6 @@ export default defineNuxtConfig({
             ]
         }
     },
-    // routeRules: {
-    //     "/**": { ssr: true },
-    // },
     devtools: {enabled: true},
     devServer: { port: 8082},
     css: ['~/assets/style.scss'],

@@ -15,11 +15,8 @@
     "@nuxt/devtools": "latest",
     "@nuxtjs/plausible": "^1.2.0",
     "@nuxtjs/tailwindcss": "^6.9.4",
-    "nuxt": "^3.12.3",
-    "nuxt-svgo": "^3.6.0",
-    "sass": "^1.69.5",
-    "vue": "^3.3.8",
-    "vue-router": "^4.2.5"
+    "nuxt": "^4.2.0",
+    "sass": "^1.69.5"
   },
   "dependencies": {
     "@fortawesome/vue-fontawesome": "^3.0.5",
