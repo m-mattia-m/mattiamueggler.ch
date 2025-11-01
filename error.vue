@@ -10,11 +10,11 @@ const source = route.query.source
       <div class="mb-12" v-if="props.error.statusCode === 404">
         <h1 class="text-9xl font-bold text-dark">404</h1>
         <p class="text-4xl font-light text-dark">Not Found</p>
-        <div class="my-6">
+        <div class="my-6" v-if="route.query.source === 'shlink'">
           <div class="w-full flex justify-center">
             <hr class="border-dark border-t-[0.5px] border-b-0 pb-2 w-16">
           </div>
-          <p class=" text-dark" v-if="route.query.source">
+          <p class=" text-dark">
             Shlink link does not exist (anymore). Ask the sender to get a new one.
           </p>
           <div class="w-full flex justify-center">

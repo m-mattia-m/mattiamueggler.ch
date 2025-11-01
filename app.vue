@@ -5,5 +5,4 @@
 </template>
 
 <script setup>
-// No need to manage layouts here ✅
 </script>
