@@ -8,7 +8,7 @@ on:
       - 'develop/**'
 
 env:
-  IMAGE_NAME: formtion-frontend
+  IMAGE_NAME: mattiamueggler-ch
 
 jobs:
   build-and-publish:
