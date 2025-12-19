@@ -29,14 +29,6 @@
         <div class="flex justify-center items-center">
           <div
               class="bg-dark text-white w-32 h-32 flex items-center justify-center border rounded-lg transform transition ease-in duration-300 hover:scale-125">
-            <NuxtLink :external="true" to="https://bento.me/mattiamueggler" target="_blank" @click="useTrackEvent('bento')" aria-label="Bento">
-              <img src="/public/icons/bento.svg" class="h-14 w-14" alt="Bento">
-            </NuxtLink>
-          </div>
-        </div>
-        <div class="flex justify-center items-center">
-          <div
-              class="bg-dark text-white w-32 h-32 flex items-center justify-center border rounded-lg transform transition ease-in duration-300 hover:scale-125">
             <NuxtLink :external="true" to="https://blog.mattiamueggler.ch" target="_blank" @click="useTrackEvent('blog')" aria-label="Blog">
               <img src="/public/icons/blog.svg" class="h-14 w-14" alt="Blog">
             </NuxtLink>
