@@ -74,6 +74,14 @@
             </NuxtLink>
           </div>
         </div>
+        <div class="flex justify-center items-center">
+          <div
+              class="bg-dark text-white w-32 h-32 flex items-center justify-center border rounded-lg transform transition ease-in duration-300 hover:scale-125">
+            <NuxtLink to="/.well-known" @click="useTrackEvent('.well-known')" aria-label=".well-known">
+              <img src="/public/icons/search-list.svg" class="h-14 w-14" alt="Search-list">
+            </NuxtLink>
+          </div>
+        </div>
       </div>
     </div>
     <NuxtLink to="mailto:hi@mattiamueggler.ch"
