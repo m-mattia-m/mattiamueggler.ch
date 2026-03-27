@@ -45,5 +45,10 @@ export default defineNuxtConfig({
             pure: ['console.log', 'console.error', 'console.warn', 'console.debug', 'console.trace'],
         },
     },
+    nitro: {
+        prerender: {
+            ignore: ['/.well-known'],
+        },
+    },
 })
 
